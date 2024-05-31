@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Atendimento</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Verdana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="painel-header" aria-label="Painel de atendimento">
+        <h1>Painel de Atendimento</h1>
+    </header>
+
+
+    <!--MENU E BOTÕES-->
+
+    <button class="BotaoMenu" onclick="Menu()" aria-expanded="false" aria-label="Abrir Controle de senhas">
+        <span class="menu-icon">&#9776;</span> 
+        <span class="close-icon">&#10005;</span> 
+    </button>
+    <div id="menu" class="menu hidden" aria-hidden="true">
+         <h3 class="TituloMenu">Controle de Senhas</h3>
+        <button onclick="retirarSenha('normal')" class="btn btn-success">Retirar senha normal</button>
+        <button onclick="retirarSenha('prioritario')" class="btn btn-primary">Retirar senha preferencial</button>
+        <button onclick="chamarProximaSenha()" id="btnChamarProximaSenha" class="btn btn-warning" disabled>Chamar próxima senha</button>
+        <button onclick="chamarSenhaNovamente()" id="btnChamarSenhaNovamente" class="btn btn-danger" disabled>Chamar senha novamente</button>
+    </div>
+    
+    <!--CARD VÍDEO-->
+
+    <div class="video-container">
+        <div id="player"></div>
+        <div class="video-text visually-hidden">[LIBRAS] Coletânea Temporada 5 - Completa | Bob Zoom | Vídeo Infantil Musical Oficial</div>
+    </div>    
+
+    <!--DATA E HORA-->
+    
+    <div class="card dataeHora">
+        <p> Data e Hora Atuais: <span id="horaData" class="hora-data"></span></p>
+    </div>
+
+    <!--SENHA CHAMADA-->
+
+    <h2 class="subtitulos card senhachamada">SENHA CHAMADA:</h2>
+
+    <div class="visor card">
+        <span id="senhaAtendida">000</span>
+    </div>
+
+    <!--ULTIMAS SENHAS-->
+
+    <h2 class="ultimachamada card subtitulos">ÚLTIMAS SENHAS</h2>
+
+    <div class="card-UltimasSenhas">
+        <ul id="historicoSenhas" class="list-group">
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+            <li class="list-group-item" aria-hidden="true">---</li>
+        </ul>
+    </div>
+
+    <!--Informações de atendimento-->
+
+    <h2 class="subtitulos card card-informacoes">INFORMAÇÕES DO ATENDIMENTO</h2>
+
+    <div class="card informacoes">
+        <p>Última senha retirada (Normal): <span id="ultimaSenhaNormal">000</span></p>
+        <p>Última senha retirada (Prioritária): <span id="ultimaSenhaPrioritaria">000</span></p>
+        <p>Próximo a ser chamado: <span id="proximoAtendimento">000</span></p>
+        <p>Tempo Médio de Espera: <span id="tempoEspera">0</span> minutos</p>
+    </div>
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+
+    <!-- VLibras Plugin -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+</body>
+</html>
