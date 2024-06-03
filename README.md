@@ -11,7 +11,7 @@ Facilitar o atendimento de pessoas com necessidades especiais, proporcionando um
 
 ## Tecnologias Usadas
 - Frontend: HTML, CSS, JavaScript;
-- Leitor de Tela: NVDA;
+- Leitor de Tela para testes: NVDA;
 
 ## Status do Projeto
 Em desenvolvimento.
