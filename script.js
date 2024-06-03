@@ -153,6 +153,6 @@ function onPlayerReady(event) {
     event.target.seekTo(0);
     event.target.unMute();
     event.target.playVideo();
-    event.target.setVolume(10);
+    event.target.setVolume(1);
     document.querySelector('.video-text').classList.add('visually-hidden');
 }
