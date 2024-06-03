@@ -1,19 +1,22 @@
 ﻿# Painel-de-Atendimento-Acessivel
-## Descrição
-Objetivo: Facilitar o atendimento de pessoas com necessidades especiais, proporcionando uma experiência inclusiva e acessível.
 
-Principais Funcionalidades:
+## Objetivo
+Facilitar o atendimento de pessoas com necessidades especiais, proporcionando uma experiência inclusiva e acessível.
+
+## Principais Funcionalidades
 - Gerenciamento de senhas;
 - Anúncio de senhas por voz;
-- Interface amigável para usuários com deficiências visuais;
+- Interface amigável para usuários com deficiências visuais e auditivas;
 - Registro de histórico de atendimentos.
 
-Tecnologias Usadas:
+## Tecnologias Usadas
 - Frontend: HTML, CSS, JavaScript;
+- Leitor de Tela: NVDA;
 
-Status do Projeto: Em desenvolvimento
+## Status do Projeto
+Em desenvolvimento.
 
-## Funcionalidades
+## Funcionalidades de um painel de atendimento
 
 Um painel de atendimento pode incluir várias funcionalidades para melhorar a eficiência e a experiência dos usuários. Aqui estão algumas funcionalidades que podem ser consideradas para um painel de atendimento:
 
