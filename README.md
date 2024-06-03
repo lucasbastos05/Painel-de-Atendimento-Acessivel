@@ -1,7 +1,7 @@
 ﻿# Painel-de-Atendimento-Acessivel
 
 ## Objetivo
-Facilitar o atendimento de pessoas com necessidades especiais, proporcionando uma experiência inclusiva e acessível.
+Facilitar o atendimento de pessoas com deficiência, proporcionando uma experiência inclusiva e acessível.
 
 ## Principais Funcionalidades
 - Gerenciamento de senhas;
@@ -11,7 +11,7 @@ Facilitar o atendimento de pessoas com necessidades especiais, proporcionando um
 
 ## Tecnologias Usadas
 - Frontend: HTML, CSS, JavaScript;
-- Leitor de Tela para testes: NVDA;
+
 
 ## Status do Projeto
 Em desenvolvimento.
